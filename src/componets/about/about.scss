@@ -1,0 +1,145 @@
+.about {
+    font-family: "Roboto", sans-serif;
+
+    &__wrapper-title {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (min-width: 960px) {
+            margin-top: 91px;
+        }
+    }
+
+    &__title {
+        position: relative;
+        text-align: center;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 70px;
+        color: #f44a1e;
+
+        @media (min-width: 660px) {
+            margin: 0 28px;
+        }
+
+        @media (min-width: 660px) {
+            font-size: 60px;
+        }
+
+        &-line-left,
+        &-line-right {
+            display: block;
+
+            @media (min-width: 660px) {
+                border-radius: 3px;
+                width: 100px;
+                height: 4px;
+                background-color: #f44a1e;
+            }
+
+            @media (min-width: 960px) {
+                width: 156px;
+            }
+        }
+    }
+
+    &__info {
+        margin-top: 20px;
+
+        @media (min-width: 960px) {
+            display: flex;
+            margin-top: 43px;
+        }
+    }
+
+    &__photo {
+        margin: 0 auto;
+        width: 80%;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+
+        @media (min-width: 660px) {
+            width: 50%;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+
+            @media (min-width: 960px) {
+                width: 400px;
+                height: 400px;
+            }
+        }
+    }
+
+    &__skills {
+        margin-top: 20px;
+        text-align: center;
+        color: #fff;
+        padding: 20px;
+
+        @media (min-width: 960px) {
+            padding: 0;
+            order: -1;
+            width: 50%;
+        }
+    }
+
+    &__skills-title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 34px;
+
+        @media (min-width: 960px) {
+            text-align: start;
+            font-size: 40px;
+            line-height: 47px;
+        }
+    }
+
+    &__skills-description {
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+
+        @media (min-width: 660px) {
+            margin-top: 27px;
+            font-size: 20px;
+            line-height: 26px;
+        }
+
+        @media (min-width: 960px) {
+            text-align: start;
+            font-size: 24px;
+            line-height: 34px;
+        }
+    }
+
+    &__button-wrapper {
+        display: flex;
+        justify-content: center;
+        padding: 30px 0 50px;
+
+        @media (min-width: 960px) {
+            justify-content: flex-start;
+        }
+    }
+
+    &__button {
+        display: block;
+        border: none;
+        background-color: #f44a1e;
+        text-transform: uppercase;
+        padding: 15px 26px 13px;
+        color: #fff;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 20px;
+    }
+}

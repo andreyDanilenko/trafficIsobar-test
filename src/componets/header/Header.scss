@@ -1,0 +1,48 @@
+.header {
+    background-color: #000;
+
+    &__wrapper {
+        padding: 36px 0 45px;
+
+        @media (min-width: 660px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+
+        @media (min-width: 660px) {
+            display: block;
+        }
+    }
+
+    &__links {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+
+        @media (min-width: 660px) {
+            margin-top: 0;
+        }
+    }
+
+    &__link {
+        margin: 0 12px;
+    }
+
+    &__link a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+        line-height: 23px;
+        font-weight: 400;
+    }
+
+    .active {
+        border-bottom: 1px solid #f44a1e;
+    }
+}
